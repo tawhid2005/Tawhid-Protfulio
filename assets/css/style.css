@@ -1033,23 +1033,19 @@ h1, h2, h3, h4, h5, h6 {
    AUTO-ROTATING BOOK SHOWCASE CAROUSEL (Grid Overlay System)
    =================================================================== */
 #carousel-slides-container {
-  display: grid !important;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  align-items: center;
   position: relative;
-  min-height: 480px;
+  width: 100%;
+  min-height: 380px;
 }
 
 .carousel-slide {
-  grid-area: 1 / 1 / 2 / 2 !important;
   width: 100% !important;
-  transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1), transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.5s !important;
-  position: relative !important;
-  inset: auto !important;
+  transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
 .carousel-slide.slide-active {
+  display: block !important;
+  position: relative !important;
   opacity: 1 !important;
   transform: translateX(0) scale(1) !important;
   pointer-events: auto !important;
@@ -1058,8 +1054,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .carousel-slide.slide-hidden {
+  display: none !important;
+  position: absolute !important;
   opacity: 0 !important;
-  transform: translateX(18px) scale(0.99) !important;
   pointer-events: none !important;
   visibility: hidden !important;
   z-index: 0 !important;
@@ -1744,3 +1741,91 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
+
+/* ===================================================================
+   ULTRA-RESPONSIVE MOBILE IMAGE & BOOK SHOWCASE PERFECTION
+   =================================================================== */
+@media (max-width: 768px) {
+  /* Prevent 3D WebKit texture discarding and clipping on mobile devices */
+  .book-3d-wrapper {
+    perspective: none !important;
+    transform-style: flat !important;
+    padding: 12px 0 20px 0 !important;
+  }
+
+  .book-3d-item {
+    transform: none !important;
+    animation: none !important;
+    transform-style: flat !important;
+    max-width: 210px !important;
+    margin: 0 auto !important;
+    box-shadow: 0 16px 36px -10px rgba(0, 0, 0, 0.75), 0 0 0 1px rgba(255, 255, 255, 0.15) !important;
+  }
+
+  .book-3d-item img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
+    border-radius: 12px !important;
+  }
+
+  /* Mobile Books Grid: Professional 2-Column Library Catalog */
+  #books-grid-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 0.75rem !important;
+  }
+
+  .book-item {
+    border-radius: 1rem !important;
+  }
+
+  .book-item .aspect-\[2\/3\] {
+    aspect-ratio: 2 / 3 !important;
+    min-height: 190px !important;
+    position: relative !important;
+    width: 100% !important;
+  }
+
+  .book-item .aspect-\[2\/3\] img {
+    position: absolute !important;
+    inset: 0.35rem !important;
+    width: calc(100% - 0.7rem) !important;
+    height: calc(100% - 0.7rem) !important;
+    object-fit: cover !important;
+    display: block !important;
+    border-radius: 0.6rem !important;
+  }
+
+  /* Compact button styling on 2-col mobile cards */
+  .book-item .p-5 {
+    padding: 0.75rem !important;
+  }
+
+  .book-item h4 {
+    font-size: 0.8rem !important;
+    line-height: 1.25 !important;
+  }
+
+  .book-item p {
+    font-size: 0.7rem !important;
+    line-height: 1.3 !important;
+  }
+
+  /* Hero profile card size optimization */
+  #hero-slideshow {
+    max-width: 320px !important;
+    margin: 0 auto !important;
+  }
+
+  /* Ensure no container causes horizontal scroll */
+  body, html {
+    overflow-x: hidden !important;
+    width: 100% !important;
+  }
+
+  /* Safe interactive touch target size */
+  .book-quick-preview-btn, .award-modal-trigger, .cert-modal-trigger {
+    touch-action: manipulation;
+  }
+}
