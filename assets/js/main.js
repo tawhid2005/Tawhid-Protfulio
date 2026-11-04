@@ -3166,7 +3166,17 @@ function initMobileDock() {
 
   if (aiBtn) {
     aiBtn.addEventListener('click', () => {
-      document.getElementById('ai-chat-toggle-btn')?.click();
+      const chatWindow = document.getElementById('tawhid-ai-chat-window');
+      if (chatWindow) {
+        chatWindow.classList.toggle('active');
+        if (chatWindow.classList.contains('active')) {
+          const chatInput = document.getElementById('ai-chat-input');
+          if (chatInput) setTimeout(() => chatInput.focus(), 300);
+        }
+      } else {
+        document.getElementById('ai-chat-toggle-btn')?.click();
+      }
+      if (window.playUiAudio) window.playUiAudio('click');
     });
   }
 

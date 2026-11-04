@@ -575,7 +575,7 @@
         </button>
 
         <!-- Sound FX Switcher -->
-        <button id="sound-toggle-btn" aria-label="Toggle UI Audio" class="w-9 h-9 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 flex items-center justify-center transition-all duration-300 focus:outline-none text-slate-300 hover:text-amber-400 flex-shrink-0" title="Toggle UI Sound Effects">
+        <button id="sound-toggle-btn" aria-label="Toggle UI Audio" class="hidden sm:flex w-9 h-9 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 items-center justify-center transition-all duration-300 focus:outline-none text-slate-300 hover:text-amber-400 flex-shrink-0" title="Toggle UI Sound Effects">
           <i id="sound-icon" class="fas fa-volume-up text-xs"></i>
         </button>
 
@@ -656,7 +656,7 @@
     <!-- ===================================================================
          1. HERO SECTION (With Interactive 3D Particle Universe Canvas)
          =================================================================== -->
-    <section id="hero" class="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
+    <section id="hero" class="relative pt-28 pb-12 sm:pt-32 sm:pb-16 md:pt-40 md:pb-28 overflow-hidden">
       <!-- 3D Interactive Particle Universe Canvas -->
       <canvas id="hero-3d-canvas" class="opacity-75"></canvas>
 
@@ -986,7 +986,7 @@
     <!-- ===================================================================
          ABOUT SECTION
          =================================================================== -->
-    <section id="about" class="py-20">
+    <section id="about" class="py-12 sm:py-16 md:py-20">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="text-center max-w-3xl mx-auto mb-16">
@@ -1057,7 +1057,7 @@
     <!-- ===================================================================
          2. PROFESSIONAL EXPERIENCE & MAJOR ACHIEVEMENTS SECTION
          =================================================================== -->
-    <section id="experience" class="py-20 bg-navy-900/40 relative">
+    <section id="experience" class="py-12 sm:py-16 md:py-20 bg-navy-900/40 relative">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="text-center max-w-3xl mx-auto mb-16">
@@ -1162,11 +1162,11 @@
                   <div class="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/20 to-transparent"></div>
                   
                   <!-- Top Floating Badge -->
-                  <div class="absolute top-3.5 left-3.5 right-3.5 flex items-center justify-between">
-                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-navy-950/85 backdrop-blur-md text-amber-400 text-xs font-bold uppercase tracking-wider border border-amber-500/30 shadow-lg">
-                      <i class="fas fa-crown text-[11px]"></i> British Council Partners Meet
+                  <div class="absolute top-2.5 sm:top-3.5 left-2.5 sm:left-3.5 right-2.5 sm:right-3.5 flex items-center justify-between gap-1.5 flex-wrap z-10 pointer-events-none">
+                    <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 sm:py-1 rounded-full bg-navy-950/90 backdrop-blur-md text-amber-400 text-[10px] sm:text-xs font-bold uppercase tracking-wider border border-amber-500/30 shadow-lg pointer-events-auto">
+                      <i class="fas fa-crown text-[10px] sm:text-[11px]"></i> British Council Partners Meet
                     </span>
-                    <button class="award-modal-trigger w-9 h-9 rounded-full bg-navy-950/85 backdrop-blur-md text-white hover:text-amber-400 border border-white/20 hover:border-amber-400 flex items-center justify-center text-xs transition-colors shadow-lg cursor-pointer"
+                    <button class="award-modal-trigger w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-navy-950/85 backdrop-blur-md text-white hover:text-amber-400 border border-white/20 hover:border-amber-400 flex items-center justify-center text-xs transition-colors shadow-lg cursor-pointer flex-shrink-0 pointer-events-auto"
                       data-year="2025-26"
                       data-date="December 15, 2025"
                       data-title="Official Stage Award Conferment Ceremony"
@@ -1180,16 +1180,16 @@
                   </div>
 
                   <!-- Bottom Caption Card -->
-                  <div class="absolute bottom-3.5 left-3.5 right-3.5 p-3.5 rounded-2xl bg-navy-950/90 backdrop-blur-md border border-white/10">
-                    <div class="flex items-center justify-between">
-                      <div>
-                        <h4 class="text-white font-bold text-sm flex items-center gap-1.5">
+                  <div class="absolute bottom-2.5 sm:bottom-3.5 left-2.5 sm:left-3.5 right-2.5 sm:right-3.5 p-2.5 sm:p-3.5 rounded-xl sm:rounded-2xl bg-navy-950/90 backdrop-blur-md border border-white/10 z-10">
+                    <div class="flex items-center justify-between gap-2">
+                      <div class="min-w-0">
+                        <h4 class="text-white font-bold text-xs sm:text-sm flex items-center gap-1.5 truncate">
                           <span>Award Conferment Ceremony</span>
-                          <i class="fas fa-check-circle text-emerald-400 text-xs"></i>
+                          <i class="fas fa-check-circle text-emerald-400 text-xs flex-shrink-0"></i>
                         </h4>
-                        <p class="text-[11px] text-amber-400 font-medium">British Council IELTS Partners Meet 2025–26</p>
+                        <p class="text-[10px] sm:text-[11px] text-amber-400 font-medium truncate">British Council IELTS Partners Meet 2025–26</p>
                       </div>
-                      <span class="px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 text-[10px] font-mono font-bold border border-amber-500/30">Official</span>
+                      <span class="px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 text-[9px] sm:text-[10px] font-mono font-bold border border-amber-500/30 flex-shrink-0">Official</span>
                     </div>
                   </div>
                 </div>
@@ -1469,7 +1469,7 @@
     <!-- ===================================================================
          3. HEALTHCARE & CLINICAL CAREGIVING COMPETENCY SECTION
          =================================================================== -->
-    <section id="caregiving" class="py-20 relative">
+    <section id="caregiving" class="py-12 sm:py-16 md:py-20 relative">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="text-center max-w-3xl mx-auto mb-16">
@@ -1494,24 +1494,24 @@
                   <div class="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/20 to-transparent"></div>
                   
                   <!-- Top Floating Accreditation Badge -->
-                  <div class="absolute top-3.5 left-3.5 right-3.5 flex items-center justify-between">
-                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-navy-950/85 backdrop-blur-md text-emerald-400 text-xs font-bold uppercase tracking-wider border border-emerald-500/30 shadow-lg">
-                      <i class="fas fa-user-md text-xs"></i> Clinical Caregiver
+                  <div class="absolute top-2.5 sm:top-3.5 left-2.5 sm:left-3.5 right-2.5 sm:right-3.5 flex items-center justify-between gap-1.5 flex-wrap z-10 pointer-events-none">
+                    <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 sm:py-1 rounded-full bg-navy-950/90 backdrop-blur-md text-emerald-400 text-[10px] sm:text-xs font-bold uppercase tracking-wider border border-emerald-500/30 shadow-lg pointer-events-auto">
+                      <i class="fas fa-user-md text-[10px] sm:text-xs"></i> Clinical Caregiver
                     </span>
-                    <span class="px-2.5 py-1 rounded-full bg-emerald-500/90 text-navy-950 text-[10px] font-mono font-bold shadow-lg">
+                    <span class="px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full bg-emerald-500/95 text-navy-950 text-[9px] sm:text-[10px] font-mono font-bold shadow-lg pointer-events-auto">
                       NTVQF Level-II
                     </span>
                   </div>
 
                   <!-- Bottom Floating Identity & Hospital Accreditation -->
-                  <div class="absolute bottom-3.5 left-3.5 right-3.5 p-3.5 rounded-2xl bg-navy-950/90 backdrop-blur-md border border-white/10 shadow-lg">
-                    <div class="flex items-center justify-between">
-                      <div>
-                        <span class="text-[10px] text-emerald-400 uppercase font-mono font-bold block">Certified Healthcare Practitioner</span>
-                        <h4 class="text-white font-bold text-sm">Md Talha Hussain Tawhid</h4>
-                        <p class="text-[11px] text-slate-300">Noorjahan Hospital Ltd. &amp; BTEB</p>
+                  <div class="absolute bottom-2.5 sm:bottom-3.5 left-2.5 sm:left-3.5 right-2.5 sm:right-3.5 p-2.5 sm:p-3.5 rounded-xl sm:rounded-2xl bg-navy-950/90 backdrop-blur-md border border-white/10 shadow-lg z-10">
+                    <div class="flex items-center justify-between gap-2">
+                      <div class="min-w-0">
+                        <span class="text-[9px] sm:text-[10px] text-emerald-400 uppercase font-mono font-bold block truncate">Certified Healthcare Practitioner</span>
+                        <h4 class="text-white font-bold text-xs sm:text-sm truncate">Md Talha Hussain Tawhid</h4>
+                        <p class="text-[10px] sm:text-[11px] text-slate-300 truncate">Noorjahan Hospital Ltd. &amp; BTEB</p>
                       </div>
-                      <span class="w-9 h-9 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 flex items-center justify-center text-sm">
+                      <span class="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 flex items-center justify-center text-xs sm:text-sm flex-shrink-0">
                         <i class="fas fa-stethoscope"></i>
                       </span>
                     </div>
@@ -1624,7 +1624,7 @@
     <!-- ===================================================================
          4. COMPUTER OFFICE APPLICATIONS & IT SYSTEMS DIPLOMA SECTION
          =================================================================== -->
-    <section id="it-diploma" class="py-20 bg-navy-900/40 relative">
+    <section id="it-diploma" class="py-12 sm:py-16 md:py-20 bg-navy-900/40 relative">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="text-center max-w-3xl mx-auto mb-16">
@@ -1744,24 +1744,24 @@
                   <div class="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/20 to-transparent"></div>
                   
                   <!-- Top Floating Accreditation Badge -->
-                  <div class="absolute top-3.5 left-3.5 right-3.5 flex items-center justify-between">
-                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-navy-950/85 backdrop-blur-md text-cyan-400 text-xs font-bold uppercase tracking-wider border border-cyan-500/30 shadow-lg">
-                      <i class="fas fa-laptop-code text-xs"></i> IT Systems Specialist
+                  <div class="absolute top-2.5 sm:top-3.5 left-2.5 sm:left-3.5 right-2.5 sm:right-3.5 flex items-center justify-between gap-1.5 flex-wrap z-10 pointer-events-none">
+                    <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 sm:py-1 rounded-full bg-navy-950/90 backdrop-blur-md text-cyan-400 text-[10px] sm:text-xs font-bold uppercase tracking-wider border border-cyan-500/30 shadow-lg pointer-events-auto">
+                      <i class="fas fa-laptop-code text-[10px] sm:text-xs"></i> IT Systems Specialist
                     </span>
-                    <span class="px-2.5 py-1 rounded-full bg-cyan-500/90 text-navy-950 text-[10px] font-mono font-bold shadow-lg">
+                    <span class="px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full bg-cyan-500/95 text-navy-950 text-[9px] sm:text-[10px] font-mono font-bold shadow-lg pointer-events-auto">
                       360-Hr Standard
                     </span>
                   </div>
 
                   <!-- Bottom Floating Identity & BTEB Accreditation -->
-                  <div class="absolute bottom-3.5 left-3.5 right-3.5 p-3.5 rounded-2xl bg-navy-950/90 backdrop-blur-md border border-white/10 shadow-lg">
-                    <div class="flex items-center justify-between">
-                      <div>
-                        <span class="text-[10px] text-cyan-400 uppercase font-mono font-bold block">Certified Office Systems Specialist</span>
-                        <h4 class="text-white font-bold text-sm">Md Talha Hussain Tawhid</h4>
-                        <p class="text-[11px] text-slate-300">BTEB 360-Hr Standard &amp; BCTTC</p>
+                  <div class="absolute bottom-2.5 sm:bottom-3.5 left-2.5 sm:left-3.5 right-2.5 sm:right-3.5 p-2.5 sm:p-3.5 rounded-xl sm:rounded-2xl bg-navy-950/90 backdrop-blur-md border border-white/10 shadow-lg z-10">
+                    <div class="flex items-center justify-between gap-2">
+                      <div class="min-w-0">
+                        <span class="text-[9px] sm:text-[10px] text-cyan-400 uppercase font-mono font-bold block truncate">Certified Office Systems Specialist</span>
+                        <h4 class="text-white font-bold text-xs sm:text-sm truncate">Md Talha Hussain Tawhid</h4>
+                        <p class="text-[10px] sm:text-[11px] text-slate-300 truncate">BTEB 360-Hr Standard &amp; BCTTC</p>
                       </div>
-                      <span class="w-9 h-9 rounded-full bg-cyan-500/20 text-cyan-400 border border-cyan-500/30 flex items-center justify-center text-sm">
+                      <span class="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-cyan-500/20 text-cyan-400 border border-cyan-500/30 flex items-center justify-center text-xs sm:text-sm flex-shrink-0">
                         <i class="fas fa-desktop"></i>
                       </span>
                     </div>
@@ -1779,7 +1779,7 @@
     <!-- ===================================================================
          5. PUBLISHED BOOKS & E-BOOKS SECTION
          =================================================================== -->
-    <section id="publications" class="py-20 relative">
+    <section id="publications" class="py-12 sm:py-16 md:py-20 relative">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="text-center max-w-3xl mx-auto mb-16">
@@ -2433,23 +2433,23 @@
           <div class="mt-8 flex flex-col lg:flex-row lg:items-center justify-between gap-4">
             
             <!-- Category Filter Buttons -->
-            <div class="flex flex-wrap items-center gap-2">
-              <button class="book-filter-btn px-3.5 py-1.5 rounded-full text-xs font-semibold transition-all bg-amber-500 text-navy-950 border border-amber-400 active" data-book-filter="all">
+            <div class="flex items-center gap-2 overflow-x-auto no-scrollbar pb-1.5 sm:pb-0 sm:flex-wrap">
+              <button class="book-filter-btn whitespace-nowrap flex-shrink-0 px-3.5 py-1.5 rounded-full text-xs font-semibold transition-all bg-amber-500 text-navy-950 border border-amber-400 active" data-book-filter="all">
                 All Books (21)
               </button>
-              <button class="book-filter-btn px-3.5 py-1.5 rounded-full text-xs font-semibold transition-all bg-slate-800/60 text-slate-300 border border-white/10 hover:border-rose-400" data-book-filter="kobo">
+              <button class="book-filter-btn whitespace-nowrap flex-shrink-0 px-3.5 py-1.5 rounded-full text-xs font-semibold transition-all bg-slate-800/60 text-slate-300 border border-white/10 hover:border-rose-400" data-book-filter="kobo">
                 <i class="fas fa-bookmark text-rose-400 mr-1"></i> Rakuten Kobo (3)
               </button>
-              <button class="book-filter-btn px-3.5 py-1.5 rounded-full text-xs font-semibold transition-all bg-slate-800/60 text-slate-300 border border-white/10 hover:border-emerald-400" data-book-filter="google">
+              <button class="book-filter-btn whitespace-nowrap flex-shrink-0 px-3.5 py-1.5 rounded-full text-xs font-semibold transition-all bg-slate-800/60 text-slate-300 border border-white/10 hover:border-emerald-400" data-book-filter="google">
                 <i class="fab fa-google-play text-emerald-400 mr-1"></i> Google Play (18)
               </button>
-              <button class="book-filter-btn px-3.5 py-1.5 rounded-full text-xs font-semibold transition-all bg-slate-800/60 text-slate-300 border border-white/10 hover:border-amber-400" data-book-filter="finance">
+              <button class="book-filter-btn whitespace-nowrap flex-shrink-0 px-3.5 py-1.5 rounded-full text-xs font-semibold transition-all bg-slate-800/60 text-slate-300 border border-white/10 hover:border-amber-400" data-book-filter="finance">
                 Finance &amp; Wealth
               </button>
-              <button class="book-filter-btn px-3.5 py-1.5 rounded-full text-xs font-semibold transition-all bg-slate-800/60 text-slate-300 border border-white/10 hover:border-cyan-400" data-book-filter="tech">
+              <button class="book-filter-btn whitespace-nowrap flex-shrink-0 px-3.5 py-1.5 rounded-full text-xs font-semibold transition-all bg-slate-800/60 text-slate-300 border border-white/10 hover:border-cyan-400" data-book-filter="tech">
                 AI &amp; Tech Strategy
               </button>
-              <button class="book-filter-btn px-3.5 py-1.5 rounded-full text-xs font-semibold transition-all bg-slate-800/60 text-slate-300 border border-white/10 hover:border-purple-400" data-book-filter="business">
+              <button class="book-filter-btn whitespace-nowrap flex-shrink-0 px-3.5 py-1.5 rounded-full text-xs font-semibold transition-all bg-slate-800/60 text-slate-300 border border-white/10 hover:border-purple-400" data-book-filter="business">
                 Business &amp; Sales
               </button>
             </div>
@@ -3570,7 +3570,7 @@
     <!-- ===================================================================
          4. PROJECTS & TECHNICAL SKILLS SECTION
          =================================================================== -->
-    <section id="projects" class="py-20 bg-navy-900/40 relative">
+    <section id="projects" class="py-12 sm:py-16 md:py-20 bg-navy-900/40 relative">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="text-center max-w-3xl mx-auto mb-14">
@@ -3591,23 +3591,23 @@
         </div>
 
         <!-- Filter Tab Buttons -->
-        <div class="flex flex-wrap items-center justify-center gap-2.5 mb-10">
-          <button class="project-filter-btn px-4 py-2 rounded-full text-xs font-semibold transition-all bg-amber-500 text-navy-950 border border-amber-400 active" data-filter="all">
+        <div class="flex items-center justify-start sm:justify-center gap-2 overflow-x-auto no-scrollbar pb-2 mb-8 sm:mb-10 sm:flex-wrap">
+          <button class="project-filter-btn whitespace-nowrap flex-shrink-0 px-4 py-2 rounded-full text-xs font-semibold transition-all bg-amber-500 text-navy-950 border border-amber-400 active" data-filter="all">
             All Projects (11)
           </button>
-          <button class="project-filter-btn px-4 py-2 rounded-full text-xs font-semibold transition-all bg-slate-800/60 text-slate-300 border border-white/10 hover:border-amber-400" data-filter="web">
+          <button class="project-filter-btn whitespace-nowrap flex-shrink-0 px-4 py-2 rounded-full text-xs font-semibold transition-all bg-slate-800/60 text-slate-300 border border-white/10 hover:border-amber-400" data-filter="web">
             Web Apps &amp; Live Demos
           </button>
-          <button class="project-filter-btn px-4 py-2 rounded-full text-xs font-semibold transition-all bg-slate-800/60 text-slate-300 border border-white/10 hover:border-amber-400" data-filter="tool">
+          <button class="project-filter-btn whitespace-nowrap flex-shrink-0 px-4 py-2 rounded-full text-xs font-semibold transition-all bg-slate-800/60 text-slate-300 border border-white/10 hover:border-amber-400" data-filter="tool">
             Calculators &amp; Tools
           </button>
-          <button class="project-filter-btn px-4 py-2 rounded-full text-xs font-semibold transition-all bg-slate-800/60 text-slate-300 border border-white/10 hover:border-amber-400" data-filter="finance">
+          <button class="project-filter-btn whitespace-nowrap flex-shrink-0 px-4 py-2 rounded-full text-xs font-semibold transition-all bg-slate-800/60 text-slate-300 border border-white/10 hover:border-amber-400" data-filter="finance">
             Finance &amp; eCommerce
           </button>
-          <button class="project-filter-btn px-4 py-2 rounded-full text-xs font-semibold transition-all bg-slate-800/60 text-slate-300 border border-white/10 hover:border-amber-400" data-filter="creative">
+          <button class="project-filter-btn whitespace-nowrap flex-shrink-0 px-4 py-2 rounded-full text-xs font-semibold transition-all bg-slate-800/60 text-slate-300 border border-white/10 hover:border-amber-400" data-filter="creative">
             Games &amp; Creative
           </button>
-          <button class="project-filter-btn px-4 py-2 rounded-full text-xs font-semibold transition-all bg-slate-800/60 text-slate-300 border border-white/10 hover:border-amber-400" data-filter="cyber">
+          <button class="project-filter-btn whitespace-nowrap flex-shrink-0 px-4 py-2 rounded-full text-xs font-semibold transition-all bg-slate-800/60 text-slate-300 border border-white/10 hover:border-amber-400" data-filter="cyber">
             Recon &amp; Security
           </button>
         </div>
@@ -4130,7 +4130,7 @@
     <!-- ===================================================================
          5. EDUCATION & CERTIFICATIONS SECTION
          =================================================================== -->
-    <section id="education" class="py-24 relative overflow-hidden">
+    <section id="education" class="py-12 sm:py-16 md:py-24 relative overflow-hidden">
       <!-- Ambient Background Glows -->
       <div class="absolute top-1/4 left-0 w-96 h-96 bg-amber-500/5 rounded-full blur-3xl pointer-events-none"></div>
       <div class="absolute bottom-1/4 right-0 w-96 h-96 bg-cyan-500/5 rounded-full blur-3xl pointer-events-none"></div>
@@ -4495,7 +4495,7 @@
     <!-- ===================================================================
          EXECUTIVE ENDORSEMENTS & CLIENT TESTIMONIALS
          =================================================================== -->
-    <section id="testimonials" class="py-16 relative border-t border-white/5">
+    <section id="testimonials" class="py-12 sm:py-16 relative border-t border-white/5">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="text-center max-w-3xl mx-auto mb-12">
@@ -4600,7 +4600,7 @@
     <!-- ===================================================================
          EXECUTIVE SERVICES & STRATEGIC CLIENT SOLUTIONS BENTO
          =================================================================== -->
-    <section id="services" class="py-20 relative bg-navy-900/30 border-t border-white/5">
+    <section id="services" class="py-12 sm:py-16 md:py-20 relative bg-navy-900/30 border-t border-white/5">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <!-- Section Header -->
@@ -4863,7 +4863,7 @@
     <!-- ===================================================================
          5.5 FREQUENTLY ASKED QUESTIONS (FAQ & Semantic Search Rich Snippets)
          =================================================================== -->
-    <section id="faq" class="py-20 relative bg-navy-950/60 border-t border-white/5">
+    <section id="faq" class="py-12 sm:py-16 md:py-20 relative bg-navy-950/60 border-t border-white/5">
       <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <!-- Section Header -->
@@ -4970,7 +4970,7 @@
     <!-- ===================================================================
          6. CONTACT & INTERACTIVE SOCIAL LINKS SECTION
          =================================================================== -->
-    <section id="contact" class="py-20 bg-navy-900/40 relative">
+    <section id="contact" class="py-12 sm:py-16 md:py-20 bg-navy-900/40 relative">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="text-center max-w-3xl mx-auto mb-16">
