@@ -3,56 +3,64 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://tawhidprotfulio.vercel.app/</loc>
-    <lastmod>2026-11-04</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
+    
+    <!-- Primary Official Portrait -->
     <image:image>
       <image:loc>https://tawhidprotfulio.vercel.app/assets/images/tawhid_portrait.jpg</image:loc>
       <image:title>Md Talha Hussain Tawhid - Head of Marketing, Author &amp; Developer</image:title>
-      <image:caption>Official portrait of Md Talha Hussain Tawhid</image:caption>
+      <image:caption>Official HD Portrait of Md Talha Hussain Tawhid in Sylhet, Bangladesh</image:caption>
+      <image:geo_location>Sylhet, Bangladesh</image:geo_location>
+    </image:image>
+
+    <!-- Professional Studio Portrait 1 -->
+    <image:image>
+      <image:loc>https://tawhidprotfulio.vercel.app/assets/images/profile/tawhid_new_1.jpg</image:loc>
+      <image:title>Md Talha Hussain Tawhid - Head of Marketing at Shah Sultan's IELTS Academy</image:title>
+      <image:caption>Executive portrait of Md Talha Hussain Tawhid, Author and Growth Marketing Leader</image:caption>
+      <image:geo_location>Sylhet, Bangladesh</image:geo_location>
+    </image:image>
+
+    <!-- Professional Studio Portrait 2 -->
+    <image:image>
+      <image:loc>https://tawhidprotfulio.vercel.app/assets/images/profile/tawhid_new_2.jpg</image:loc>
+      <image:title>Md Talha Hussain Tawhid - Author of 20+ Global Books</image:title>
+      <image:caption>Commercial Author profile of Md Talha Hussain Tawhid on Google Play &amp; Rakuten Kobo</image:caption>
+      <image:geo_location>Sylhet, Bangladesh</image:geo_location>
+    </image:image>
+
+    <!-- IT Specialist Dossier Portrait -->
+    <image:image>
+      <image:loc>https://tawhidprotfulio.vercel.app/assets/images/profile/tawhid_it_specialist_ai.jpg</image:loc>
+      <image:title>Md Talha Hussain Tawhid - Certified IT Systems &amp; Office Applications Specialist</image:title>
+      <image:caption>BTEB 360-Hour Certified Computer &amp; IT Specialist Md Talha Hussain Tawhid</image:caption>
+      <image:geo_location>Sylhet, Bangladesh</image:geo_location>
+    </image:image>
+
+    <!-- Clinical Healthcare Portrait -->
+    <image:image>
+      <image:loc>https://tawhidprotfulio.vercel.app/assets/images/profile/tawhid_medical_specialist.jpg</image:loc>
+      <image:title>Md Talha Hussain Tawhid - Certified Clinical Healthcare Practitioner</image:title>
+      <image:caption>NTVQF Level-II Certified Healthcare Specialist Md Talha Hussain Tawhid</image:caption>
+      <image:geo_location>Sylhet, Bangladesh</image:geo_location>
+    </image:image>
+
+    <!-- British Council Stage Award Presentation -->
+    <image:image>
+      <image:loc>https://tawhidprotfulio.vercel.app/assets/images/awards/award_ceremony_2025_26.jpg</image:loc>
+      <image:title>Md Talha Hussain Tawhid receiving British Council IELTS Star Performer Award</image:title>
+      <image:caption>Official stage presentation ceremony at British Council IELTS Partners Meet 2025-26</image:caption>
+      <image:geo_location>Sylhet, Bangladesh</image:geo_location>
+    </image:image>
+
+    <!-- British Council Trophy -->
+    <image:image>
+      <image:loc>https://tawhidprotfulio.vercel.app/assets/images/awards/trophy_star_performer_2025_26.jpg</image:loc>
+      <image:title>British Council IELTS Star Performer Award Trophy Conferred to Md Talha Hussain Tawhid</image:title>
+      <image:caption>Star Performer Trophy - Shah Sultan's IELTS Academy - IELTS Partners Meet 2025-26</image:caption>
+      <image:geo_location>Sylhet, Bangladesh</image:geo_location>
     </image:image>
   </url>
-  <url>
-    <loc>https://tawhidprotfulio.vercel.app/#about</loc>
-    <lastmod>2026-11-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tawhidprotfulio.vercel.app/#experience</loc>
-    <lastmod>2026-11-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://tawhidprotfulio.vercel.app/#publications</loc>
-    <lastmod>2026-11-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://tawhidprotfulio.vercel.app/#projects</loc>
-    <lastmod>2026-11-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://tawhidprotfulio.vercel.app/#services</loc>
-    <lastmod>2026-11-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://tawhidprotfulio.vercel.app/#faq</loc>
-    <lastmod>2026-11-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tawhidprotfulio.vercel.app/#contact</loc>
-    <lastmod>2026-11-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
 </urlset>
-
